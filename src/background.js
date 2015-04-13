@@ -6,7 +6,7 @@ chrome.browserAction.onClicked.addListener(function() {
         
         if (result.active == true){
             
-            chrome.browserAction.setIcon({path:"icon-on.png"});
+            chrome.browserAction.setIcon({path:"../img/icon-on.png"});
 
             chrome.storage.sync.set({'active': false});
 
@@ -14,7 +14,7 @@ chrome.browserAction.onClicked.addListener(function() {
 
         } else {
             
-            chrome.browserAction.setIcon({path:"icon-off.png"});
+            chrome.browserAction.setIcon({path:"../img/icon-off.png"});
 
             chrome.storage.sync.set({'active': true});
 

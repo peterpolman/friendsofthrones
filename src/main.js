@@ -8,7 +8,6 @@ $(document).ready(function(){
 
 function findAndReplace(searchText, replacement, searchNode) {
     if (!searchText || typeof replacement === 'undefined') {
-        // Throw error here if you want...
         return;
     }
     var regex = typeof searchText === 'string' ?

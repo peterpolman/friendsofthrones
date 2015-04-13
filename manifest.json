@@ -1,12 +1,12 @@
 {
     "background": {
-        "scripts": ["payload/background.js"]
+        "scripts": ["src/background.js"]
     },
     "content_scripts": [
         {
             "js": [
                 "lib/jq/jquery-2.1.1.min.js",
-                "payload/payload.js"
+                "src/main.js"
             ],
             "matches": [
                 "http://*/*",
@@ -15,13 +15,13 @@
         }
     ],
     "browser_action": {
-        "default_icon": "icon-off.png"
+        "default_icon": "img/icon-off.png"
     },
     "description": "This little plug-in here lets you keep all your Facebook friends who don’t understand your weird wish to wait until the very end of the season to binge-watch Friends of Thrones in a chair made of swords with 68 bags of Cheetos, like it was meant to be watched.",
     "manifest_version": 2,
     "name": "Friends of Thrones",
     "short_name": "FoT",
-    "version": "1.1",
+    "version": "1.2",
     "permissions": [
         "storage",
         "tabs",
@@ -30,6 +30,6 @@
         "<all_urls>"
     ],
     "icons": { 
-        "128": "icon-128.png"
+        "128": "img/icon-128.png"
     }
 }
